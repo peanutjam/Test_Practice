@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AZ-900 Exam Prep</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">AZ-900</span>
+        <span class="subtitle">Microsoft Azure Fundamentals</span>
+      </div>
+      <div id="timer" class="timer hidden" aria-live="polite"></div>
+    </header>
+
+    <main id="screen-home" class="screen active">
+      <section class="hero card">
+        <h1>Exam preparation</h1>
+        <p class="lead">
+          Practice and full-length mock exams aligned to AZ-900 skill areas.
+          Wrong answers show the correct choice, an explanation, and a Microsoft Learn link.
+        </p>
+        <dl id="meta-stats" class="stats"></dl>
+      </section>
+
+      <section class="grid two">
+        <article class="card mode-card">
+          <h2>Mock exam</h2>
+          <p>Mimics the real exam: timed session, mixed domains, score at the end (700 scale ≈ 70%).</p>
+          <button type="button" class="btn primary" id="btn-mock">Start mock exam</button>
+        </article>
+        <article class="card mode-card">
+          <h2>Practice by domain</h2>
+          <label for="domain-select">Skill area</label>
+          <select id="domain-select"></select>
+          <button type="button" class="btn secondary" id="btn-practice">Start practice</button>
+        </article>
+      </section>
+
+      <section class="card note">
+        <h3>How feedback works</h3>
+        <ul>
+          <li>Submit your answer for each question.</li>
+          <li>If you are wrong, you see why, the correct answer, and where to study on Learn.</li>
+          <li>Mock exams use the same question bank with domain-weighted selection.</li>
+        </ul>
+      </section>
+    </main>
+
+    <main id="screen-exam" class="screen">
+      <div class="exam-layout">
+        <aside class="card navigator">
+          <div class="nav-head">
+            <strong>Question navigator</strong>
+            <span id="progress-label"></span>
+          </div>
+          <div id="question-map" class="question-map"></div>
+          <button type="button" class="btn ghost" id="btn-finish">Finish &amp; score</button>
+        </aside>
+
+        <section class="card question-panel">
+          <div class="q-meta">
+            <span id="q-domain" class="pill"></span>
+            <span id="q-type" class="pill muted"></span>
+          </div>
+          <h2 id="q-text" class="q-text"></h2>
+          <form id="options-form" class="options"></form>
+          <div class="actions">
+            <button type="button" class="btn secondary" id="btn-prev">Previous</button>
+            <button type="submit" form="options-form" class="btn primary" id="btn-submit">Submit answer</button>
+            <button type="button" class="btn secondary" id="btn-next">Next</button>
+          </div>
+          <div id="feedback" class="feedback hidden" role="status"></div>
+        </section>
+      </div>
+    </main>
+
+    <main id="screen-results" class="screen">
+      <section class="card results">
+        <h1>Results</h1>
+        <p id="results-summary" class="lead"></p>
+        <div id="results-badge" class="badge"></div>
+        <h2>Questions to review</h2>
+        <div id="wrong-list" class="wrong-list"></div>
+        <button type="button" class="btn primary" id="btn-home">Back to home</button>
+      </section>
+    </main>
+  </div>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
