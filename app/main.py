@@ -12,7 +12,7 @@ APP_DIR = Path(__file__).resolve().parent
 STATIC_DIR = APP_DIR.parent / "static"
 TEMPLATES_DIR = APP_DIR.parent / "templates"
 
-app = FastAPI(title="AZ-900 Exam Prep", version="1.0.0)
+app = FastAPI(title="AZ-900 Exam Prep", version="1.0.0")
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 

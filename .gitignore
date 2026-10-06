@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+scripts/.learn-catalog.json
 venv/
 .env
 .env.*

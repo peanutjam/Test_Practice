@@ -1,0 +1,167 @@
+{
+  "overview": {
+    "exam": "AZ-900: Microsoft Azure Fundamentals",
+    "audience": "Business users, new IT staff, and anyone who needs foundational Azure and cloud vocabulary.",
+    "format_notes": "The live exam is scored on a scale of up to 1000; ~700 is a common passing bar. This app uses 45 questions and a 70% practice threshold to mimic timing and breadth, not exact exam items.",
+    "official_objectives": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/"
+  },
+  "domains": [
+    {
+      "id": "cloud_concepts",
+      "title": "Describe cloud concepts (25–30%)",
+      "sections": [
+        {
+          "heading": "What is cloud computing?",
+          "paragraphs": [
+            "Cloud computing delivers compute, storage, networking, and applications over the internet with on-demand provisioning and pay-for-use pricing.",
+            "Key characteristics include broad network access, resource pooling, rapid elasticity, and measured service."
+          ]
+        },
+        {
+          "heading": "Cloud service models",
+          "bullets": [
+            "IaaS — You manage OS, middleware, runtime, data, and apps; provider manages physical infrastructure and virtualization.",
+            "PaaS — You manage applications and data; provider manages runtime, middleware, OS, and infrastructure.",
+            "SaaS — You consume software over the internet; provider manages nearly the entire stack."
+          ]
+        },
+        {
+          "heading": "Deployment models",
+          "bullets": [
+            "Public cloud — Shared provider infrastructure (e.g., Azure regions).",
+            "Private cloud — Dedicated to one organization; may be on-premises or hosted.",
+            "Hybrid cloud — Connects public and private with orchestration for migration and burst scenarios."
+          ]
+        },
+        {
+          "heading": "Economics and benefits",
+          "bullets": [
+            "CapEx vs OpEx — Cloud shifts many costs from upfront capital to operational spend.",
+            "Elasticity and scalability — Scale out/in to match demand instead of over-provisioning hardware.",
+            "High availability and fault tolerance — Design for redundancy across zones and regions.",
+            "Consumption-based pricing — Meters usage; reservations and savings plans reduce cost for steady workloads."
+          ]
+        },
+        {
+          "heading": "Shared responsibility",
+          "paragraphs": [
+            "Security and management duties depend on the service model. The provider always secures the physical datacenter and platform; the customer always owns data, identities, and access control choices.",
+            "SaaS shifts more responsibility to the provider; IaaS leaves more OS and network configuration to the customer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "azure_architecture",
+      "title": "Describe Azure architecture and services (35–40%)",
+      "sections": [
+        {
+          "heading": "Core architecture",
+          "bullets": [
+            "Regions and region pairs — Geographic areas for deployment; pairs support disaster recovery within a geography.",
+            "Availability Zones — Physically separate datacenters within a region for resiliency.",
+            "Resource groups — Logical containers for resources that share lifecycle.",
+            "Subscriptions — Billing and access boundary; organized under management groups.",
+            "Azure Resource Manager (ARM) — Deployment and management layer; templates enable infrastructure as code."
+          ]
+        },
+        {
+          "heading": "Compute",
+          "bullets": [
+            "Virtual Machines — Full control of the guest OS (IaaS).",
+            "Virtual Machine Scale Sets — Identical VMs with autoscale.",
+            "Azure App Service — Managed web and API hosting (PaaS).",
+            "Azure Functions — Event-driven, serverless code.",
+            "Azure Container Instances / AKS — Containers without or with Kubernetes orchestration.",
+            "Azure Virtual Desktop — Desktop and app virtualization."
+          ]
+        },
+        {
+          "heading": "Networking",
+          "bullets": [
+            "Virtual Network (VNet) — Private network isolation in Azure.",
+            "VPN Gateway and ExpressRoute — Hybrid connectivity (internet VPN vs private circuit).",
+            "Azure DNS — Host DNS domains and records.",
+            "Load Balancer and Application Gateway — Layer 4 vs Layer 7 traffic distribution; App Gateway can include WAF.",
+            "Network Security Groups — Allow/deny traffic by IP, port, and protocol."
+          ]
+        },
+        {
+          "heading": "Storage",
+          "bullets": [
+            "Blob storage — Unstructured object data; tiers Hot, Cool, and Archive.",
+            "Azure Files — SMB/NFS file shares.",
+            "Disk Storage — Block storage for VMs.",
+            "Table and Queue storage — NoSQL key-value and asynchronous messaging.",
+            "Redundancy — LRS, ZRS, GRS, and geo-zone options trade cost vs durability."
+          ]
+        },
+        {
+          "heading": "Data and analytics (fundamentals level)",
+          "bullets": [
+            "Azure SQL Database — Managed relational PaaS.",
+            "Azure Cosmos DB — Global, multi-model NoSQL with configurable consistency.",
+            "Synapse Analytics — Enterprise analytics and data warehousing at a high level."
+          ]
+        },
+        {
+          "heading": "Identity and security services",
+          "bullets": [
+            "Microsoft Entra ID — Identity, SSO, and access for cloud applications.",
+            "RBAC — Grant actions on scopes via built-in and custom roles.",
+            "Conditional Access and MFA — Risk-based policies and multi-step sign-in.",
+            "Microsoft Defender for Cloud — Secure score and workload protection recommendations.",
+            "Key Vault — Central store for secrets, keys, and certificates.",
+            "Azure Firewall, DDoS Protection, and Bastion — Network protection and secure admin access to VMs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "azure_management",
+      "title": "Describe Azure management and governance (30–35%)",
+      "sections": [
+        {
+          "heading": "Management tools",
+          "bullets": [
+            "Azure Portal — Web UI for resources.",
+            "Azure Cloud Shell — Browser shell with Bash/PowerShell and CLI.",
+            "Azure CLI and Azure PowerShell — Cross-platform and scriptable administration.",
+            "ARM templates and Bicep — Repeatable, declarative deployments.",
+            "Azure Arc — Extend Azure management to hybrid and multicloud resources."
+          ]
+        },
+        {
+          "heading": "Governance and compliance",
+          "bullets": [
+            "Management groups — Hierarchy above subscriptions for policy and RBAC inheritance.",
+            "Azure Policy — Enforce organizational standards (allow/deny/remediate).",
+            "Resource locks — CanNotDelete or ReadOnly protection.",
+            "Tags — Metadata for cost allocation and automation.",
+            "Microsoft Purview — Data governance and catalog (awareness level).",
+            "Service Trust Portal — Compliance documentation and audit reports."
+          ]
+        },
+        {
+          "heading": "Monitoring and reliability",
+          "bullets": [
+            "Azure Monitor — Metrics, logs, alerts, and dashboards.",
+            "Log Analytics — Query and analyze log data (KQL).",
+            "Azure Service Health — Platform incidents and planned maintenance.",
+            "Azure Advisor — Free recommendations for cost, security, reliability, performance, and operations.",
+            "Well-Architected Framework — Five pillars: reliability, security, cost optimization, operational excellence, performance efficiency."
+          ]
+        },
+        {
+          "heading": "Cost management",
+          "bullets": [
+            "Azure pricing calculator — Estimate spend before deployment.",
+            "Cost Management + Billing — Budgets, alerts, and analysis.",
+            "TCO calculator — Compare on-premises vs Azure costs.",
+            "Cost optimization — Right-size resources, reservations, and eliminating waste."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "domain": "cloud_concepts",
+    "question": "Which cloud benefit reduces the time to provision new servers from weeks to minutes?",
+    "options": ["High latency", "On-demand self-service", "Manual procurement only", "Fixed capacity planning"],
+    "correct": [1],
+    "explanation": "On-demand self-service lets users provision resources quickly through portals or APIs without waiting for hardware orders.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/2-describe-cloud-computing",
+    "multi_select": false
+  },
+  {
+    "domain": "cloud_concepts",
+    "question": "In the shared responsibility model for SaaS, who typically manages the operating system?",
+    "options": ["The customer", "The cloud provider", "The end user only", "Third-party auditors"],
+    "correct": [1],
+    "explanation": "For SaaS, the provider manages the stack including OS, middleware, and runtime; customers manage data, access, and usage.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-security-privacy-compliance-trust/2-describe-defense-depth",
+    "multi_select": false
+  },
+  {
+    "domain": "cloud_concepts",
+    "question": "Which statements describe public cloud? (Select two.)",
+    "options": ["Resources shared among multiple tenants", "Always runs on your own datacenter hardware", "Owned and operated by a third-party provider", "Cannot scale elastically"],
+    "correct": [0, 2],
+    "explanation": "Public cloud is multi-tenant infrastructure operated by a provider such as Microsoft and supports elastic scaling.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-define-cloud-models",
+    "multi_select": true
+  },
+  {
+    "domain": "cloud_concepts",
+    "question": "A region pair in Azure is primarily used to:",
+    "options": ["Reduce storage redundancy", "Support disaster recovery with data residency in the same geography", "Eliminate the need for backups", "Provide free egress worldwide"],
+    "correct": [1],
+    "explanation": "Region pairs within the same geography support DR scenarios while meeting data residency requirements.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/4-describe-regions",
+    "multi_select": false
+  },
+  {
+    "domain": "cloud_concepts",
+    "question": "Which pricing model requires an upfront commitment for one or three years in exchange for a discount?",
+    "options": ["Spot pricing", "Reserved instances / savings plans", "Pay-as-you-go only", "Free tier only"],
+    "correct": [1],
+    "explanation": "Reservations and savings plans trade commitment for lower rates compared with pay-as-you-go.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-describe-consumption-based-model",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Virtual Machine Scale Sets help you:",
+    "options": ["Automatically increase or decrease VM instances based on demand", "Replace Azure AD", "Store archival blobs only", "Host DNS zones"],
+    "correct": [0],
+    "explanation": "Scale sets deploy and manage a set of identical VMs with autoscale rules.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-describe-azure-virtual-machines",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "An availability set spreads VMs across:",
+    "options": ["Update domains and fault domains within a datacenter", "Only different subscriptions", "Only different tenants in Entra ID", "Archive storage tiers"],
+    "correct": [0],
+    "explanation": "Availability sets protect against localized hardware failures and maintenance events.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-describe-azure-virtual-machines",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Azure Container Instances (ACI) is best for:",
+    "options": ["Running simple containers without managing cluster infrastructure", "Hosting Active Directory domain controllers only", "Long-term tape backup", "Managing RBAC assignments"],
+    "correct": [0],
+    "explanation": "ACI offers serverless, quick container runs without orchestrating a full cluster.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-azure-kubernetes-service",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Which Azure storage redundancy option keeps three copies within a single datacenter?",
+    "options": ["LRS (Locally redundant storage)", "GRS (Geo-redundant storage)", "ZRS in multiple regions only", "Archive tier only"],
+    "correct": [0],
+    "explanation": "LRS replicates data three times within a single physical location.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-describe-storage-tiers",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Azure Disk Storage is typically used for:",
+    "options": ["Persistent block storage for Azure VMs", "Global DNS hosting", "Identity federation", "Message queuing between microservices"],
+    "correct": [0],
+    "explanation": "Managed disks provide durable block storage attached to virtual machines.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-describe-azure-blob-storage",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "A Network Security Group (NSG) filters traffic based on:",
+    "options": ["Source/destination IP, port, and protocol rules", "SQL query plans", "Blob tiering policies", "Entra ID group membership only"],
+    "correct": [0],
+    "explanation": "NSGs contain security rules that allow or deny network traffic to resources.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-security-privacy-compliance-trust/6-describe-azure-firewall",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Azure Application Gateway provides:",
+    "options": ["Layer 7 load balancing and optional Web Application Firewall", "Only DNS registration", "Only archival storage", "Cosmos DB consistency levels"],
+    "correct": [0],
+    "explanation": "Application Gateway is a web traffic load balancer with WAF capabilities for HTTP/S.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/8-describe-azure-load-balancer",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Site-to-site VPN in Azure connects:",
+    "options": ["On-premises networks to an Azure virtual network over the internet", "Two blob containers in the same account only", "Entra tenants without encryption", "Physical tapes to Archive tier"],
+    "correct": [0],
+    "explanation": "VPN gateway enables encrypted tunnels between on-premises sites and Azure VNets.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/3-describe-azure-virtual-networks",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Microsoft Defender for Cloud primarily helps you:",
+    "options": ["Improve security posture with recommendations and threat protection", "Replace Azure Monitor metrics", "Create ARM templates", "Manage domain name registrations"],
+    "correct": [0],
+    "explanation": "Defender for Cloud provides secure score, recommendations, and workload protections.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-security-privacy-compliance-trust/2-describe-defense-depth",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Azure AI services (formerly Cognitive Services) provide:",
+    "options": ["Prebuilt APIs for vision, speech, language, and decision tasks", "Only relational database engines", "Physical server leasing", "Archive rehydration only"],
+    "correct": [0],
+    "explanation": "Azure AI services expose ready-made models through APIs for common AI scenarios.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/6-describe-azure-functions",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Azure Arc extends Azure management to:",
+    "options": ["Resources outside Azure such as on-premises and other clouds", "Only Azure public regions", "Only Microsoft 365 mailboxes", "Only GitHub repositories"],
+    "correct": [0],
+    "explanation": "Arc projects servers, Kubernetes clusters, and data services into Azure Resource Manager for unified governance.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-azure-arc",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Microsoft Purview in Azure helps organizations:",
+    "options": ["Govern data across hybrid estates with catalog and compliance tools", "Replace Azure Policy entirely", "Host VM disks", "Terminate ExpressRoute circuits"],
+    "correct": [0],
+    "explanation": "Purview provides data governance, cataloging, and compliance capabilities.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "A CanNotDelete resource lock prevents:",
+    "options": ["Deletion of a resource while still allowing modification", "All read access globally", "Any tagging", "Network traffic"],
+    "correct": [0],
+    "explanation": "CanNotDelete locks block removal but changes that do not delete the resource may still be allowed.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/8-describe-resource-locks",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Azure Activity Log records:",
+    "options": ["Control-plane operations such as create, update, and delete on resources", "Every SQL query inside a database", "User keyboard input in VMs", "CDN cache hits only"],
+    "correct": [0],
+    "explanation": "Activity Log tracks subscription-level management events for auditing and troubleshooting.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools/2-describe-azure-monitor",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Log Analytics workspace is used to:",
+    "options": ["Collect and query log data from Azure Monitor", "Register public DNS names only", "Deploy VM extensions only", "Replace Entra ID"],
+    "correct": [0],
+    "explanation": "Log Analytics stores log data and supports Kusto Query Language (KQL) analysis.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools/2-describe-azure-monitor",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Conditional Access in Microsoft Entra ID evaluates:",
+    "options": ["Signals such as user, location, device, and risk before granting access", "Blob replication settings", "VM CPU utilization only", "ExpressRoute bandwidth only"],
+    "correct": [0],
+    "explanation": "Conditional Access policies enforce requirements like MFA or compliant devices at sign-in.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-basic-security-features/2-describe-azure-active-directory",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Which tools can deploy Azure resources? (Select two.)",
+    "options": ["Azure Portal", "Azure CLI", "Only physical console in a datacenter", "Only email requests to support"],
+    "correct": [0, 1],
+    "explanation": "Azure supports GUI and automation tools including Portal, CLI, PowerShell, and ARM templates.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-azure-portal",
+    "multi_select": true
+  },
+  {
+    "domain": "azure_management",
+    "question": "Azure pricing calculator helps you:",
+    "options": ["Estimate monthly costs before deploying workloads", "Automatically apply RBAC roles", "Create availability zones", "Enable MFA for all users"],
+    "correct": [0],
+    "explanation": "The pricing calculator models service choices and usage to forecast spend.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management/2-describe-cost-management",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "The Service Trust Portal provides:",
+    "options": ["Compliance documentation and audit reports for Azure", "VM image marketplace only", "Free Azure credits only", "GitHub Actions runners"],
+    "correct": [0],
+    "explanation": "Service Trust Portal hosts compliance guides and third-party audit results.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-security-privacy-compliance-trust/7-describe-compliance-offerings",
+    "multi_select": false
+  },
+  {
+    "domain": "cloud_concepts",
+    "question": "Measured service in cloud computing means:",
+    "options": ["Usage is monitored, reported, and billed", "All services are free", "Capacity can never change", "Only email is metered"],
+    "correct": [0],
+    "explanation": "Cloud providers meter consumption so customers pay for what they use.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-describe-consumption-based-model",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Hot storage tier in Azure Blob is optimized for:",
+    "options": ["Frequent read/write access", "Rare access with lowest storage cost", "Offline tape-only access", "Identity tokens"],
+    "correct": [0],
+    "explanation": "Hot tier balances storage cost with low access cost for active data.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-describe-storage-tiers",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Azure Virtual Desktop provides:",
+    "options": ["Desktop and application virtualization in Azure", "Only DNS forwarding", "Only queue messaging", "Only SQL backups"],
+    "correct": [0],
+    "explanation": "AVD hosts Windows desktops and apps with centralized management and autoscale.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-describe-azure-virtual-machines",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Management groups are used to:",
+    "options": ["Organize subscriptions for policy and RBAC at scale", "Store VM disks", "Host static websites", "Replace resource groups inside a VM"],
+    "correct": [0],
+    "explanation": "Management groups create a hierarchy above subscriptions for governance.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-subscriptions",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_management",
+    "question": "Azure Blueprints (where available) helps you:",
+    "options": ["Package policy, RBAC, ARM templates, and resources for repeatable environments", "Replace Azure Monitor", "Encrypt all traffic automatically without configuration", "Delete all locks automatically"],
+    "correct": [0],
+    "explanation": "Blueprints define repeatable cloud environments with governance artifacts.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-azure-policy",
+    "multi_select": false
+  },
+  {
+    "domain": "azure_architecture",
+    "question": "Azure IoT Hub is designed for:",
+    "options": ["Bi-directional communication with IoT devices at scale", "Hosting relational OLTP only", "Replacing ExpressRoute", "Managing Entra groups only"],
+    "correct": [0],
+    "explanation": "IoT Hub ingests telemetry and sends commands to registered devices.",
+    "study_url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/6-describe-azure-functions",
+    "multi_select": false
+  }
+]

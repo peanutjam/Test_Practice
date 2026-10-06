@@ -1,0 +1,84 @@
+{
+  "source": "https://learn.microsoft.com/api/learn/catalog?locale=en-us",
+  "exam_page": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/",
+  "learning_paths": [
+    {
+      "title": "Introduction to Cloud Infrastructure: Describe cloud concepts",
+      "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "modules": [
+        {
+          "title": "Describe cloud computing",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+          "duration_minutes": 24
+        },
+        {
+          "title": "Describe the benefits of using cloud services",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+          "duration_minutes": 19
+        },
+        {
+          "title": "Describe cloud service types",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+          "duration_minutes": 13
+        }
+      ]
+    },
+    {
+      "title": "Introduction to Cloud Infrastructure: Describe Azure architecture and services",
+      "url": "https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "modules": [
+        {
+          "title": "Describe the core architectural components of Azure",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+          "duration_minutes": 28
+        },
+        {
+          "title": "Describe Azure compute services",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+          "duration_minutes": 33
+        },
+        {
+          "title": "Describe Azure networking services",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/",
+          "duration_minutes": 24
+        },
+        {
+          "title": "Describe Azure storage services",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/",
+          "duration_minutes": 36
+        },
+        {
+          "title": "Describe Azure identity, access, and security",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/",
+          "duration_minutes": 47
+        }
+      ]
+    },
+    {
+      "title": "Introduction to Cloud Infrastructure: Describe Azure management and governance",
+      "url": "https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/",
+      "modules": [
+        {
+          "title": "Describe cost management in Azure",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/",
+          "duration_minutes": 27
+        },
+        {
+          "title": "Describe features and tools in Azure for governance and compliance",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/",
+          "duration_minutes": 19
+        },
+        {
+          "title": "Describe features and tools for managing and deploying Azure resources",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+          "duration_minutes": 22
+        },
+        {
+          "title": "Describe monitoring tools in Azure",
+          "url": "https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/",
+          "duration_minutes": 13
+        }
+      ]
+    }
+  ]
+}

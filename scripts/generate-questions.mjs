@@ -480,3 +480,4 @@ add(
 mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, JSON.stringify(questions, null, 2));
 console.log(`Wrote ${questions.length} questions to ${out}`);
+console.log("Next: python scripts/merge_extra_questions.py && python scripts/sync_study_urls.py && python scripts/resync_questions.py");
